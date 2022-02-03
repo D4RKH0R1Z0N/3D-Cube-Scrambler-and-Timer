@@ -4,7 +4,11 @@
 
 ### Made by D4RKH0R1Z0N
 
-### https://cubing.github.io/AnimCubeJS/
+```
+AnimCubeJS (formerly AnimCube)
+AnimCube created by Josef Jelínek (2001 - 2004)
+AnimCubeJS created by Michael Feather (old versions: 2015 - 2019, current version: 2021)
+```
 
 ## Coding for Cube
 

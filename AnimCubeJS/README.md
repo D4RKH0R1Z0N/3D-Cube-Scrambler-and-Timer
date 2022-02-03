@@ -1,1 +1,1 @@
-AnimCubeJS();
+# AnimCubeJS();

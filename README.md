@@ -21,13 +21,17 @@ speed - 15
 clickprogress - 0
 scramble - 1
 buttonbar - 1
+hint - 5
+scale - 3
+initmove - #
 Command -
-AnimCube3("scramble=1&speed=15&bgcolor=34455B&clickprogress=0&colorscheme=wyrogb&buttonbar=2")
+
+AnimCube3("scramble=1&speed=15&bgcolor=34455B&clickprogress=0&colorscheme=wyrogb&buttonbar=1&initmove=#&scale=3&hint=5")
 ```
 
 ## Hosting
 
-**heroku.com**
+**https://heroku.com**
 
 For more info go to **https://cubing.github.io/AnimCubeJS/animcubejs.html#parameters**
 

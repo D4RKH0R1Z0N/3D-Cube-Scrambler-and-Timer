@@ -1,0 +1,53 @@
+<script src="AnimCube3.js"></script>
+<style>
+    td { text-align:center }
+    .btn {
+       border-radius:15px;
+       background-color:#ffffff;
+       border:solid black 1px;
+       outline:none;
+    }
+    .btn:active { background-color: #aaaaaa; }
+  </style>
+  <table>
+   <tr>
+    <td>
+     <div id=c1 style="width:200px; height:200px">
+     </div>
+    </td>
+    <td width=50>
+    <td>
+     <div id=c2 style="width:200px; height:200px">
+     </div>
+    </td>
+   </tr>
+   <tr height=5>
+   <tr>
+    <td>
+    <button class=btn onclick="newCube('c1', 1)">Scramble</button>
+    &nbsp;
+    <button class=btn onclick="newCube('c1', 0)">Reset</button>
+    </td>
+    <td>
+    <td>
+    <button class=btn onclick="newCube('c2', 1)">Scramble</button>
+    &nbsp;
+    <button class=btn onclick="newCube('c2', 0)">Reset</button>
+    </td>
+   </tr>
+  </table>
+  <script>
+  var removeListeners = [];
+  var p1 = '&buttonbar=0&bgcolor=ffffff';
+  var p2 = '&buttonbar=0&bgcolor=ffffff&colorscheme=roywgb';
+  AnimCube3('id=c1' + p1);
+  AnimCube3('id=c2' + p2);
+  
+  function newCube(id, cmd) {
+    var params = (id == 'c1') ? p1 : p2;
+    if (cmd == 1)
+       params += '&start=1';
+    removeListeners[id]();
+    AnimCube3('id=' + id + params);
+  }
+  </script>
